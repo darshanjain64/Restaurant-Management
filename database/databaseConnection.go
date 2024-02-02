@@ -12,7 +12,7 @@ import (
 
 func DBinstance() *mongo.Client{
 	serverAPI := options.ServerAPI(options.ServerAPIVersion1)
-	opts := options.Client().ApplyURI("mongodb+srv://darshanr94dj:Hello%402024@cluster0.o9oelrd.mongodb.net/?retryWrites=true&w=majority").SetServerAPIOptions(serverAPI)
+	opts := options.Client().ApplyURI("mongodb+srv://<userName>:<password>@cluster0.o9oelrd.mongodb.net/?retryWrites=true&w=majority").SetServerAPIOptions(serverAPI)
   
 	// Create a new client and connect to the server
 	client, err := mongo.NewClient(opts)
